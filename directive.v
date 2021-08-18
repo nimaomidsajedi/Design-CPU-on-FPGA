@@ -19,7 +19,7 @@ output reg [2:0] dout
 always@(*)
 
 begin
-if (`sel == 3'b001)
+if (`sel == 3'b001)  // If no prefix given, number is assumed to be 32 bits therefore here it is determined 3bit length
 dout = `in2;
 else if (`sel == 3'b010)
 dout = `in2;
